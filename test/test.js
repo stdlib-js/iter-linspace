@@ -364,7 +364,7 @@ tape( 'if an environment supports `Symbol.iterator`, the returned iterator is it
 	var i;
 
 	iterLinspace = proxyquire( './../lib/main.js', {
-		'@stdlib/symbol/iterator': '__ITERATOR_SYMBOL__'
+		'@stdlib/symbol-iterator': '__ITERATOR_SYMBOL__'
 	});
 
 	it1 = iterLinspace( 0, 99, 100 );
@@ -387,7 +387,7 @@ tape( 'if an environment does not support `Symbol.iterator`, the returned iterat
 	var it;
 
 	iterLinspace = proxyquire( './../lib/main.js', {
-		'@stdlib/symbol/iterator': false
+		'@stdlib/symbol-iterator': false
 	});
 
 	it = iterLinspace( 0, 99, 100 );
