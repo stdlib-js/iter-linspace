@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/iter-linspace",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Create an iterator which returns evenly spaced numbers over a specified interval.",
   "license": "Apache-2.0",
   "author": {
