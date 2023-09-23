@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterLinspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-linspace@esm/index.mjs';
+import iterLinspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-linspace@v0.1.0-esm/index.mjs';
 ```
 
 #### iterLinspace( start, stop\[, N] )
@@ -172,7 +172,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterLinspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-linspace@esm/index.mjs';
+import iterLinspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-linspace@v0.1.0-esm/index.mjs';
 
 // Create a "countdown" iterator:
 var it = iterLinspace( 100, 0, 101 );
