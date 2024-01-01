@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,16 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
+
+// Define a union type representing both iterable and non-iterable iterators:
+type Iterator = Iter | IterableIterator;
 
 /**
-* Create an iterator which returns evenly spaced numbers over a specified interval.
+* Returns an iterator which returns evenly spaced numbers over a specified interval.
 *
-* @module @stdlib/iter-linspace
+* ## Notes
+*
+* -   If an environment supports `Symbol.iterator`, the returned iterator is iterable.
+*
+* @param start - starting value (inclusive)
+* @param stop - stopping value (inclusive)
+* @param N - number of values (default: 100)
+* @throws `N` must be a nonnegative integer
+* @returns iterator
 *
 * @example
-* var iterLinspace = require( '@stdlib/iter-linspace' );
-*
 * var iter = iterLinspace( 0, 99, 100 );
 *
 * var v = iter.next().value;
@@ -39,12 +52,9 @@
 *
 * // ...
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function iterLinspace( start: number, stop: number, N?: number ): Iterator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = iterLinspace;
