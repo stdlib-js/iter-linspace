@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterLinspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-linspace@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-linspace/tags). For example,
+
+```javascript
 import iterLinspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-linspace@v0.2.2-deno/mod.js';
 ```
 
@@ -167,7 +172,7 @@ var bool = it.next().done;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import iterLinspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-linspace@v0.2.2-deno/mod.js';
+import iterLinspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-linspace@deno/mod.js';
 
 // Create a "countdown" iterator:
 var it = iterLinspace( 100, 0, 101 );
