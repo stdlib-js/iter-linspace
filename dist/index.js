@@ -1,5 +1,0 @@
-"use strict";var T=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var h=T(function(F,q){
-var f=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),d=require('@stdlib/assert-is-number/dist').isPrimitive,g=require('@stdlib/math-base-assert-is-nan/dist'),E=require('@stdlib/assert-is-nonnegative-integer/dist').isPrimitive,c=require('@stdlib/symbol-iterator/dist'),m=require('@stdlib/error-tools-fmtprodmsg/dist');function b(r,e,v){var l,o,i,s,u,t,n;if(!d(r)||g(r))throw new TypeError(m('0PH49',r));if(!d(e)||g(e))throw new TypeError(m('0PH4A',e));if(arguments.length>2){if(!E(v))throw new TypeError(m('0PH2m',v));u=v}else u=100;return l=e-r,t=u-1,o=l/t,n=-1,i={},f(i,"next",w),f(i,"return",y),c&&f(i,c,x),i;function w(){var a;return n+=1,s||n>=u?{done:!0}:n===0?{value:r,done:!1}:n===t?{value:e,done:!1}:(o===0?a=n/t*l+r:a=n*o+r,{value:a,done:!1})}function y(a){return s=!0,arguments.length?{value:a,done:!0}:{done:!0}}function x(){return b(r,e,u)}}q.exports=b
-});var V=h();module.exports=V;
-/** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
